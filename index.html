@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        input {
+            background-color: #DCDCDC;
+        }
+    </style>
+    <title>Mony Master</title>
+</head>
+
+<body class="w-[90%] mx-auto">
+    <header class="mt-9 mb-9">
+        <h1 class="text-5xl text-[#31A5AC] font-semibold text-center">Mony Master 💰</h1>
+    </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-2 gap-9">
+                <div class="w-[75%] h-[500px]">
+                    <img src="img/Pexels Photo by Karolina Grabowska.png" alt="">
+                </div>
+                <div class="bg-[#F8F8F8] p-2000 w-[75%] box-border">
+                    <div class="flex flex-col px-20 pb-5 pt-4">
+                        <h1 class="text-center font-semibold mt-4 text-2xl">Income</h1>
+                        <div class="flex gap-4">
+                            <p>Income: </p>
+                            <input type="text" name="" id="income-input">
+                        </div>
+                        <h2 class="text-center text-2xl mt-6 font-semibold">Expenses</h2>
+                        <div class="flex gap-4 mt-7">
+                            <p>Rent:</p>
+                            <input id="rent-input" type="text">
+                        </div>
+                        <div class="flex gap-4 mt-5">
+                            <p>Clothes:</p>
+                            <input id="clothes-input" type="text">
+                        </div>
+                        <div class="flex gap-4 mt-5">
+                            <p>Food:</p>
+                            <input id="food-input" type="text">
+                        </div>
+                        <!-- Button -->
+                        <div class=" flex justify-center items-center mt-8">
+                            <button
+                                class="px-14 py-3 bg-[#59A5FF] font-semibold rounded-xl text-white" id="calculate-btn">Calculate</button>
+                        </div>
+                        <!-- Total Part  -->
+                        <div class="text-center">
+                            <h1 class="text-2xl mt-3">Total Expenses: <span id="expencesz">5500</span> </h1>
+                            <p class="text-2xl mt-6">Balance: <span id="balances">4500</span></p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 p-5">
+                        <p>Save:</p>
+                        <input id="save-input" type="text">
+                        <p class="font-bold">%</p>
+                        <button class="px-9 bg-[#59A5FF] py-1 font-bold text-white rounded-2xl " id="save-btn">Save</button>
+                    </div>
+                    <div class="text-2xl text-center mb-4">
+                        <h1>Saving Amount: <span id="save-set">2000</span> </h1>
+                        <h1>Remaining Balance: <span id="remaining-balance">2500</span> </h1>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
